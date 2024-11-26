@@ -4,7 +4,7 @@ require("dotenv").config();
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
-
+const rateLimitMiddleware = require("./middleware/ratelimit");
 const PORT = process.env.PORT || 3005;
 const dbConnection = require("./database/connect");
 
@@ -23,6 +23,8 @@ app.use((req, res, next) => {
   );
   next();
 });
+
+app.use(rateLimitMiddleware);
 
 app.use(cookieParser());
 app.use(bodyParser.json());
