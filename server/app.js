@@ -8,7 +8,16 @@ const rateLimitMiddleware = require("./middleware/ratelimit");
 const PORT = process.env.PORT || 3005;
 const dbConnection = require("./database/connect");
 
+const path = require("path");
+const exp = require("constants");
+
+const _dirname = path.dirname("");
+const buildpath = path.join(__dirname, "../client/dist");
+
+
+
 const app = express();
+app.use(express.static(buildpath));
 app.use("*", cors( { credentials: true, origin:true }));
 
 app.use((req, res, next) => {
