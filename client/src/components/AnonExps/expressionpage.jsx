@@ -12,7 +12,7 @@ import UserContext from "../../context/user/usercontext";
 import Navbar from "../Navbar/navbar";
 import dummyman from "../../assets/dummyman.png";
 import CommentBubble from "./commentbubble";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import "./exppage.css";
 import { motion } from "framer-motion";
@@ -267,6 +267,7 @@ const ExpressionPage = () => {
 
                       {cmmnt ? (
                         <Button
+                          component={Link}
                           sx={{
                             marginTop: "0.2%",
                             fontWeight: 600,
@@ -283,6 +284,7 @@ const ExpressionPage = () => {
                         </Button>
                       ) : (
                         <Button
+                          component={Link}
                           sx={{
                             marginTop: "0.2%",
                             fontWeight: 600,

@@ -12,7 +12,7 @@ import {
   Button,
 } from "@mui/material";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../Navbar/navbar";
 import axios from "axios";
 import { motion } from "framer-motion";
@@ -809,6 +809,7 @@ const NewCampaign = () => {
                     camp.ifsc &&
                     camp.ifsc.length === 11 ? (
                       <Button
+                        component={Link}
                         sx={{ borderRadius: 2, fontWeight: 600 }}
                         type="submit"
                         variant="contained"
@@ -820,6 +821,7 @@ const NewCampaign = () => {
                       </Button>
                     ) : (
                       <Button
+                        component={Link}
                         sx={{
                           borderRadius: 2,
                           fontWeight: 600,

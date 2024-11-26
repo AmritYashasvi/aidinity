@@ -23,21 +23,21 @@ const Footer = () => {
           <img className="navlogo" src={logowhite} alt=""></img>
         </Link>
         <div>
-          <a href="https://www.instagram.com/">
+          <Link to="https://www.instagram.com/">
             <InstagramIcon
               sx={{ color: "#fff", fontSize: "2vw", marginLeft: "2vw" }}
             />
-          </a>
-          <a href="https://twitter.com/">
+          </Link>
+          <Link to="https://twitter.com/">
             <TwitterIcon
               sx={{ color: "#fff", fontSize: "2vw", marginLeft: "2vw" }}
             />
-          </a>
-          <a href="https://github.com">
+          </Link>
+          <Link to="https://github.com">
             <GithubIcon
               sx={{ color: "#fff", fontSize: "2vw", marginLeft: "2vw" }}
             />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -113,12 +113,12 @@ const Footer = () => {
           color="#fff"
           variant="h6"
         >
-          <a
-            href="mailto:aidinity23@gmail.com"
+          <Link
+            to="mailto:aidinity23@gmail.com"
             style={{ textDecoration: "none", color: "#fff" }}
           >
             Contact us
-          </a>
+          </Link>
         </Typography>
       </div>
       <div

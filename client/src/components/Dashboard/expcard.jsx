@@ -1,6 +1,6 @@
 import { Card, Typography, Grid, Divider, Button, CircularProgress } from "@mui/material";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link} from "react-router-dom";
 import axios from "axios";
 import { motion } from "framer-motion";
 const BASE_URL = import.meta.env.VITE_BASE_URL;
@@ -133,6 +133,7 @@ const CampCard = (props) => {
                 <Button
                   sx={{ fontWeight: 600, borderRadius: 2, width: "48%" }}
                   onClick={openExpression}
+                  component={Link}
                   color="secondary"
                   variant="contained"
                 >
@@ -146,6 +147,7 @@ const CampCard = (props) => {
                     background:
                       "linear-gradient(60deg, #FF6666 30%, #FF3B3B 100%, #FF6666 70%)",
                   }}
+                  component={Link}
                   onClick={deleteExp}
                   color="secondary"
                   variant="contained"

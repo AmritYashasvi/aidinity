@@ -36,14 +36,14 @@ const Navbar = () => {
         }}
       >
         <div style={{ width: "50%", paddingLeft: "2%" }}>
-          <a href="/">
+          <Link to="/">
             <img
               className="navlogo"
               src={logo}
               alt=""
               style={{ height: "5vh" }}
             ></img>
-          </a>
+          </Link>
         </div>
         <div
           style={{
@@ -56,6 +56,7 @@ const Navbar = () => {
           {authUser.state.id ? (
             <Button
               className="navlinks"
+              component={Link}
               onClick={logout}
               sx={{ background: "transparent", boxShadow: "0 0 0 0 #fff" }}
             >
@@ -223,12 +224,12 @@ const Navbar = () => {
               }}
               variant="h5"
             >
-              <a
-                href="/user/dashboard"
+              <Link
+                to="/user/dashboard"
                 style={{ textDecoration: "none", color: "#fff" }}
               >
                 DASHBOARD
-              </a>
+              </Link>
             </Typography>
           )}
 
@@ -243,12 +244,12 @@ const Navbar = () => {
             }}
             variant="h5"
           >
-            <a
-              href="/fundcampaigns"
+            <Link
+              to="/fundcampaigns"
               style={{ textDecoration: "none", color: "#fff" }}
             >
               DONATE
-            </a>
+            </Link>
           </Typography>
           <Typography
             style={{
@@ -261,16 +262,17 @@ const Navbar = () => {
             }}
             variant="h5"
           >
-            <a
-              href="/expressions"
+            <Link
+              to="/expressions"
               style={{ textDecoration: "none", color: "#fff" }}
             >
               EXPRESSIONS
-            </a>
+            </Link>
           </Typography>
 
           {authUser.state.id ? (
             <Button
+              component={Link}
               onClick={logout}
               sx={{ background: "transparent", boxShadow: "0 0 0 0 #fff" }}
             >
@@ -300,12 +302,12 @@ const Navbar = () => {
               }}
               variant="h5"
             >
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 style={{ textDecoration: "none", color: "#fff" }}
               >
                 LOGIN/REGISTER
-              </a>
+              </Link>
             </Typography>
           )}
         </div>
@@ -339,12 +341,12 @@ const Navbar = () => {
                 }}
                 variant="h5"
               >
-                <a
-                  href="/user/dashboard"
+                <Link
+                  to="/user/dashboard"
                   style={{ textDecoration: "none", color: "#fff" }}
                 >
                   DASHBOARD
-                </a>
+                </Link>
               </Typography>
             )}
 
@@ -359,12 +361,12 @@ const Navbar = () => {
               }}
               variant="h5"
             >
-              <a
-                href="/fundcampaigns"
+              <Link
+                to="/fundcampaigns"
                 style={{ textDecoration: "none", color: "#fff" }}
               >
                 DONATE
-              </a>
+              </Link>
             </Typography>
             <Typography
               style={{
@@ -377,16 +379,17 @@ const Navbar = () => {
               }}
               variant="h5"
             >
-              <a
-                href="/expressions"
+              <Link
+                to="/expressions"
                 style={{ textDecoration: "none", color: "#fff" }}
               >
                 EXPRESSIONS
-              </a>
+              </Link>
             </Typography>
 
             {authUser.state.id ? (
               <Button
+                component={Link}
                 onClick={logout}
                 sx={{ background: "transparent", boxShadow: "0 0 0 0 #fff" }}
               >
@@ -416,12 +419,12 @@ const Navbar = () => {
                 }}
                 variant="h5"
               >
-                <a
-                  href="/login"
+                <Link
+                  to="/login"
                   style={{ textDecoration: "none", color: "#fff" }}
                 >
                   LOGIN/REGISTER
-                </a>
+                </Link>
               </Typography>
             )}
           </div>

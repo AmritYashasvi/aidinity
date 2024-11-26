@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import LinearProgress from "@mui/material/LinearProgress";
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { motion } from "framer-motion";
 const BASE_URL = import.meta.env.VITE_BASE_URL;
@@ -207,6 +207,7 @@ const CampCard = (props) => {
                     >
                       {" "}
                       <Button
+                        component={Link}
                         sx={{ fontWeight: 600, borderRadius: 2, width: "48%" }}
                         onClick={openCamp}
                         color="secondary"
@@ -215,6 +216,7 @@ const CampCard = (props) => {
                         Review➜
                       </Button>{" "}
                       <Button
+                        component={Link}
                         sx={{
                           fontWeight: 600,
                           borderRadius: 2,

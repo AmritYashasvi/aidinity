@@ -542,6 +542,7 @@ const CampPage = () => {
                 amt > 0 &&
                 amt <= camp.amountRequested - camp.amountRaised ? (
                   <Button
+                    component={Link}
                     className="donatebutton"
                     sx={{ borderRadius: 2, fontWeight: 600, marginTop: "3%" }}
                     type="submit"
@@ -553,6 +554,7 @@ const CampPage = () => {
                   </Button>
                 ) : (
                   <Button
+                    component={Link}
                     className="donatebutton"
                     sx={{
                       borderRadius: 2,

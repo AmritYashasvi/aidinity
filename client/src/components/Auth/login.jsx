@@ -22,7 +22,7 @@ import login from "../../assets/login.jpg";
 import logowhite from "../../assets/logowhite.png";
 import axios from "axios";
 import { useState, useEffect, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import UserContext from "../../context/user/usercontext";
 import "./auth.css";
 import { motion } from "framer-motion";
@@ -334,15 +334,15 @@ function Login() {
                         >
                           Don&apos;t have an account?{" "}
                           <span style={{ color: "#fff" }}>
-                            <a
+                            <Link
                               style={{
                                 textDecoration: "none",
                                 color: "#8E5BEB",
                               }}
-                              href="/register"
+                              to="/register"
                             >
                               &nbsp;Register➜
-                            </a>
+                            </Link>
                           </span>
                         </Typography>
                       </Grid>

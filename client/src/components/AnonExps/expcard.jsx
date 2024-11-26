@@ -1,5 +1,5 @@
 import { Card, Typography, Grid, Divider, Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 const CampCard = (props) => {
@@ -64,6 +64,7 @@ const CampCard = (props) => {
 
             <div style={{ marginTop: "2%" }}>
               <Button
+                component={Link}
                 sx={{ fontWeight: 600, borderRadius: 2 }}
                 fullWidth
                 color="secondary"

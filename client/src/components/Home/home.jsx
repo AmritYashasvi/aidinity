@@ -271,21 +271,21 @@ const Home = () => {
                 variant="h6"
               >
                 <span style={{ fontWeight: 500 }}>
-                  <a
+                  <Link
                     style={{ textDecoration: "none", color: "#FF7F50" }}
-                    href="/newexpression"
+                    to="/newexpression"
                   >
                     Express
-                  </a>
+                  </Link>
                 </span>{" "}
                 or{" "}
                 <span style={{ fontWeight: 500 }}>
-                  <a
+                  <Link
                     style={{ textDecoration: "none", color: "#0BDA51" }}
-                    href="/fundcampaigns"
+                    to="/fundcampaigns"
                   >
                     Donate
-                  </a>
+                  </Link>
                 </span>{" "}
                 🡢
               </Typography>
@@ -418,21 +418,21 @@ const Home = () => {
                 variant="h6"
               >
                 <span style={{ fontWeight: 500 }}>
-                  <a
+                  <Link
                     style={{ textDecoration: "none", color: "#0BDA51" }}
-                    href="/fundcampaigns"
+                    to="/fundcampaigns"
                   >
                     Donate to a campaign
-                  </a>
+                  </Link>
                 </span>{" "}
                 or{" "}
                 <span style={{ fontWeight: 500 }}>
-                  <a
+                  <Link
                     style={{ textDecoration: "none", color: "#0BDA51" }}
-                    href="/newcampaign"
+                    to="/newcampaign"
                   >
                     Start your own campaign.
-                  </a>
+                  </Link>
                 </span>{" "}
                 🡢
               </Typography>
@@ -537,21 +537,21 @@ const Home = () => {
                 variant="h6"
               >
                 <span style={{ fontWeight: 500 }}>
-                  <a
+                  <Link
                     style={{ textDecoration: "none", color: "#FF7F50" }}
-                    href="/expressions"
+                    to="/expressions"
                   >
                     Read an expression
-                  </a>
+                  </Link>
                 </span>{" "}
                 or{" "}
                 <span style={{ fontWeight: 500 }}>
-                  <a
+                  <Link
                     style={{ textDecoration: "none", color: "#FF7F50" }}
-                    href="/newexpression"
+                    to="/newexpression"
                   >
                     Publish your own
-                  </a>
+                  </Link>
                 </span>{" "}
                 🡢
               </Typography>

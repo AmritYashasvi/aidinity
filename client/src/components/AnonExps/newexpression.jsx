@@ -408,6 +408,7 @@ const NewExpression = () => {
                     exp.expression &&
                     exp.expression.length > 399 ? (
                       <Button
+                        component={Link}
                         sx={{ borderRadius: 2, fontWeight: 600 }}
                         type="submit"
                         variant="contained"
@@ -419,6 +420,7 @@ const NewExpression = () => {
                       </Button>
                     ) : (
                       <Button
+                        component={Link}
                         sx={{
                           borderRadius: 2,
                           fontWeight: 600,

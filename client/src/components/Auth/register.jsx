@@ -28,7 +28,7 @@ import { useState, useEffect } from "react";
 import "./auth.css";
 import { motion } from "framer-motion";
 import Footer from "../Footer/footer";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 function Register() {
@@ -541,15 +541,15 @@ function Register() {
                         >
                           Already have an account?{" "}
                           <span style={{ color: "#fff" }}>
-                            <a
+                            <Link
                               style={{
                                 textDecoration: "none",
                                 color: "#8E5BEB",
                               }}
-                              href="/login"
+                              to="/login"
                             >
                               &nbsp;Login➜
-                            </a>
+                            </Link>
                           </span>
                         </Typography>
                       </Grid>
